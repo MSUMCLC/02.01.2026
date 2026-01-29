@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .container {
+        max-width: 800px;
+        margin: auto;
+        color: #000;
+        padding: 0 12px;
+    }
+
+    .svg-wrapper {
+        text-align: center;
+        margin: -6px 0 6px 0;
+    }
+
+    .svg-wrapper img {
+        display: inline-block;
+    }
+
+    .last-page-footer {
+        font-family: Verdana, sans-serif;
+        font-size: 9pt;
+        color: #283776;
+        text-align: center;
+        margin-top: 50px;
+        line-height: 1.4;
+    }
+
+    /* Superscript bold verse numbers (kept for future use, unused now) */
+    .verse-num {
+        font-weight: bold;
+        font-size: 0.65em;
+        vertical-align: super;
+        line-height: 0;
+    }
+
+    /* Print button styling */
+    .print-btn {
+        font-size: 10pt;
+        padding: 4px 10px;
+        border: 1px solid #283776;
+        background: #fff;
+        color: #283776;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 10px 0 12px 0;
+    }
+
+    .print-btn:hover {
+        background: #f0f0f0;
+    }
+
+    /* PRINT‑ONLY FIXES */
+    @media print {
+
+        @page {
+            margin-bottom: 0.3in;
+        }
+
+        /* Hide print button */
+        .print-btn {
+            display: none;
+        }
+
+        /* Manual page-break class (use when needed) */
+        .page-break-after {
+            page-break-after: always;
+            break-after: page;
+        }
+
+        .last-page-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            padding: 4pt 0;
+            text-align: center;
+            background: none;
+
+            /* Prevent Chrome/Edge from dropping the footer */
+            z-index: 9999;
+            transform: translateZ(0);
+        }
+
+        body {
+            counter-reset: page;
+            overflow: visible !important;
+        }
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="svg-wrapper">
+<img src="https://res.cloudinary.com/dsaksgdqw/image/upload/v1769352060/MStar_logo_vyyg6p.png"
+     alt="Morning Star Logo"
+     width="90"
+     height="91"
+     style="display: inline-block;">
+
+</div>
+
+<p style="text-align: center; margin: 0 0 5px 0; font-size: clamp(1.2rem, 5vw, 14pt); font-weight: bold; line-height: 1.0; letter-spacing: 0.03em;">
+    Morning Star Las Cruces
+</p>
+
+<p style="text-align: center; margin: 0 0 5px 0; font-size: clamp(1.2rem, 5vw, 14pt); font-weight: bold; line-height: 1.0; letter-spacing: 0.03em;">
+    2026 Discussion Questions
+</p>
+
+<button class="print-btn" onclick="window.print()">Print</button>
+
+<p style="margin: 6pt 0 0pt 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.0;">
+    February 1, 2026
+</p>
+
+<p style="margin: 0pt 0 0pt 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.0;">
+    Series: Read that Again: Church History You Didn't Learn in Sunday School
+</p>
+
+<p style="margin: 0pt 0 0pt 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.0;">
+    Title: Freedom and Opportunity (Richard Allen)
+</p>
+
+<p style="margin: 0 0 6pt 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.0;">
+    Text: Galatians 5:1,13-15
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    1. When you hear the word freedom, what's the first image, feeling or example that comes to your mind?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    2. Name someone, past or present, whom you associate with courage, dignity or standing firm in the face of injustice? What have you learned from that person?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    3. What stood out to you in the message titled "Read that Again: Freedom and Opportunity?" Does anything about Richard Allen now inform how you read the Galatians passage or understand freedom?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    4. Read Galatians 5:1, 13-15. What words or phrases catch your attention as the apostle Paul talks about freedom and responsibility?
+</p>
+
+<p class="page-break-after" style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    5. Paul insists that freedom is not for self-indulgence but for loving service. How does that notion challenge common current ideas about freedom in this country? Where do you see loving service quietly pushing back against harmful interpretations of freedom?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    6. Richard Allen sought freedom from oppression not merely for his own sake but for the integrity of human dignity and authentic worship for his community and for the entire kin-dom of God. How does his story help clarify the kind of freedom Paul describes?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    7. Read Exodus 3:7-10. How does God's concern for liberation in this passage echo Paul's insistence that freedom is grounded in love and justice? What does that mean for us today?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    8. Read Luke 4:18-19. How does Jesus' vision of freedom provide the foundation of what Paul is teaching in Galatians? What difference does it make in your own practice of faith?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    9. What does faithful freedom look like in our current moment? What might God be calling you to say or do to truly promote freedom and justice for all?
+</p>
+
+<p style="margin: 6pt 0 1in 0; font-size: clamp(1.1rem, 4.5vw, 12pt); font-family: Georgia, serif; line-height: 1.15;">
+    10. How might your group pray for you as you seek to live into a freedom that is rooted in love, mutual care and responsibility to others?
+</p>
+
+</div>
+
+<div class="last-page-footer">
+Mission and Vision of Morning Star: To point people to the grace of God found in Jesus<br>
+through inspirational worship, radical inclusion and the alleviation of suffering.
+</div>
+
+</body>
+</html>
